@@ -1,0 +1,30 @@
+{
+  "name": "sequelizeevents-practice",
+  "version": "1.0.0",
+  "description": "practice of sequelize postgres server",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --watch server --exec babel-node -- server/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:dev": "sequelize db:migrate:undo:all && sequelize db:migrate"
+  },
+  "author": "hammed noibi",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "lodash": "^4.17.4",
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.22.5",
+    "validator": "^9.1.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^3.0.0"
+  }
+}
